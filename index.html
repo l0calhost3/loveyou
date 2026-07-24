@@ -2,6 +2,7 @@
 <html lang="ru">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,address=no,date=no">
 <title>❤️ Для тебя</title>
 <style>
 :root{
@@ -130,33 +131,36 @@ button:active{transform:translateY(1px) scale(.99)}
 .final-heart{font-size:clamp(72px,12vw,132px);animation:pulse 1.2s ease-in-out infinite}
 .final-text{font-size:clamp(26px,5vw,58px);line-height:1.1;letter-spacing:-.03em}
 .final-sub{max-width:680px;font-size:clamp(17px,2.4vw,24px);line-height:1.55;color:#ffd8e6}
+.stat-silent{color:inherit;text-decoration:none;pointer-events:none;}
+.stat-silent, .stat-silent:visited, .stat-silent:hover, .stat-silent:active{color:inherit !important;text-decoration:none !important;}
+a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important;pointer-events:none !important;}
 .floating{position:fixed;top:-40px;animation:fall linear forwards;pointer-events:none;filter:drop-shadow(0 0 12px rgba(255,125,164,.3))}
 @keyframes fall{to{transform:translateY(115vh) rotate(360deg);opacity:0}}
 @media (max-width:720px){
-  .scene{padding:8px}
-  .panel{width:100%;height:calc(100dvh - 16px);min-height:unset;border-radius:18px;padding:8px}
-  .layer{padding:8px}
-  .intro{gap:8px}
-  .heart{font-size:clamp(46px,11vw,68px)}
-  h1{font-size:clamp(21px,5.2vw,32px);line-height:1.03}
-  .lead{max-width:100%;font-size:clamp(12px,3.6vw,15px);line-height:1.22}
-  .badge{padding:7px 10px;font-size:9px}
-  .stats-shell{gap:8px}
-  .stats-card{padding:11px;border-radius:16px}
-  .stats-title{font-size:clamp(18px,4.6vw,26px);line-height:1.05}
+  .scene{padding:4px}
+  .panel{width:100%;height:calc(100dvh - 8px);min-height:unset;border-radius:16px;padding:7px}
+  .layer{padding:7px}
+  .intro{gap:7px}
+  .heart{font-size:clamp(42px,10vw,62px)}
+  h1{font-size:clamp(19px,4.8vw,28px);line-height:1.02}
+  .lead{max-width:100%;font-size:clamp(11px,3.2vw,14px);line-height:1.18}
+  .badge{padding:6px 9px;font-size:8px}
+  .stats-shell{gap:7px}
+  .stats-card{padding:10px;border-radius:14px}
+  .stats-title{font-size:clamp(17px,4.2vw,24px);line-height:1.04}
   .stats-grid{grid-template-columns:1fr}
-  .stat{padding:10px 9px;border-radius:14px}
-  .stat b{font-size:clamp(18px,5.2vw,26px)}
-  .stat span{font-size:11px;line-height:1.15}
-  .stream-wrap{padding:10px 8px 12px}
-  .msg{font-size:clamp(14px,3.8vw,19px);padding:7px 10px;margin:5px auto}
-  .final{padding:10px}
-  .final-card{gap:10px}
-  .final-heart{font-size:clamp(48px,11vw,72px)}
-  .final-text{font-size:clamp(18px,4.6vw,26px)}
-  .final-sub{font-size:clamp(12px,3.2vw,14px);line-height:1.28}
-  .button-row{gap:8px;margin-top:2px}
-  button{width:100%;padding:11px 16px;font-size:15px}
+  .stat{padding:9px 8px;border-radius:13px}
+  .stat b{font-size:clamp(17px,4.8vw,24px)}
+  .stat span{font-size:10px;line-height:1.12}
+  .stream-wrap{padding:8px 7px 10px}
+  .msg{font-size:clamp(13px,3.4vw,18px);padding:6px 9px;margin:4px auto}
+  .final{padding:8px}
+  .final-card{gap:8px}
+  .final-heart{font-size:clamp(44px,10vw,66px)}
+  .final-text{font-size:clamp(17px,4.2vw,24px)}
+  .final-sub{font-size:clamp(11px,3vw,13px);line-height:1.22}
+  .button-row{gap:7px;margin-top:1px}
+  button{width:100%;padding:10px 14px;font-size:14px}
 }
 </style>
 <body>
@@ -183,7 +187,7 @@ button:active{transform:translateY(1px) scale(.99)}
             <div class="stat"><b>273 дня</b><span>мы рядом</span></div>
             <div class="stat"><b>6552 часа</b><span>тепла и заботы</span></div>
             <div class="stat"><b>393 120 минут</b><span>общих мыслей и улыбок</span></div>
-            <div class="stat"><b>23 587 200 секунд</b><span>любви, которую нельзя посчитать до конца</span></div>
+            <div class="stat"><b><span class="stat-silent">23 587 200 секунд</span></b><span>любви, которую нельзя посчитать до конца</span></div>
           </div>
           <div class="button-row">
             <button id="continueBtn" type="button">Продолжить</button>
